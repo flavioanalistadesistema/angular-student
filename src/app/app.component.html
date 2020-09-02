@@ -3,3 +3,6 @@
 <app-student *ngFor="let student of students" [student]="student"></app-student>
 
 <app-student></app-student>
+
+<button (click)="click($event)">Click me!!</button>
+<input (keyDown.space)="keyDownSpace($event)">

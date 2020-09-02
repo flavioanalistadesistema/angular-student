@@ -14,4 +14,12 @@ export class AppComponent {
     {name:'Patricia', isProgrammer: false, linguage: 'JavaScript'}
   ]
 
+  click(event): void {
+    console.log("Esse é o click do botão: ", event);
+  }
+
+  keyDownSpace(event): void {
+    console.log("Esse é o keyDown: ", event);
+  }
+
 }
