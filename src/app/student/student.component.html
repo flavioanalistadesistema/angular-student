@@ -1,6 +1,6 @@
 <div>
     name: {{student.name}}
-    <div [hidden]="!student.isProgrammer">
+    <div *ngIf="student.isProgrammer">
         <small>{{student.linguage}}</small>
     </div>
 </div>
