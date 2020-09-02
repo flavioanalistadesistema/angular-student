@@ -1,6 +1,9 @@
-<div>
-    name: {{student.name}}
-    <div *ngIf="student.isProgrammer">
-        <small>{{student.linguage}}</small>
+<div *ngIf="student">
+    name: {{student?.name}}
+    <div *ngIf="student?.isProgrammer">
+        <small>{{student?.linguage}}</small>
     </div>
 </div>
+<p *ngIf="!student">
+    Objeto nao definido
+</p>
