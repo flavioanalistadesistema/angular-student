@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Student } from './student/student.module'
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  flavio   = {name:'Flávio', isProgrammer: true, linguage: 'PHP'}
-  henrique = {name:'Henrique', isProgrammer: false }
-  patricia = {name:'Patricia', isProgrammer: true, linguage: 'JavaScript'}
+
+  students: Student[] = [
+    {name:'Flávio', isProgrammer: true, linguage: 'PHP'},
+    {name:'Henrique', isProgrammer: true, linguage: 'Elixir' },
+    {name:'Patricia', isProgrammer: false, linguage: 'JavaScript'}
+  ]
+
 }
